@@ -1,0 +1,15 @@
+{% extends "personal/headerOther.html"%}
+
+{% block content %}
+    <div class="background gallery-grid">      
+        <div class="tile is-ancestor">
+            <div class="tile is-parent is-4 is-vertical">         
+                {% for post in object_list%}
+                    <div class="tile is-child">
+                        <h5>{{ post.date|date:"d-m-Y" }}<br><a href="{{post.id}}"> {{ post.title}}</h5>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

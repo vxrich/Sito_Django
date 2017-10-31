@@ -1,0 +1,312 @@
+@import 'w3.css';
+@import 'bulma.css';
+
+html {
+    margin: 0;
+    height: 100%;
+}
+
+html.other {
+    margin: 0;
+    height: auto;
+}
+
+#home {
+    background: #FFFFFF url('../hi-res/IMG_9282.jpg') fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+    font-family: Frente;
+    margin: 0;
+}
+
+#other {
+    background: #FFFFFF url('../hi-res/IMG_9282.jpg') fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    font-family: Frente;
+    margin: 0;
+    overflow: auto;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+
+/* P A class */
+p {
+    color: black;
+    opacity: 1;
+    justify-content: center;
+    font-size: 4vmin;
+}
+
+h5 {
+    justify-content: center;
+}
+
+p.title{
+    font-family: 'Frente';
+    color: white;
+    font-size: 14vmin;
+}
+
+p.subtitle{
+    font-family: 'Frente';
+    font-size: 6vmin;
+    color: white;
+}
+
+a.custom{
+    color: black;
+    font-size: 3vmin;
+}
+
+a.cc{
+    color: #1B3E98;
+    font-size: 3vmin;
+}
+
+a.button{
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: gallery;
+
+    text-decoration: none;
+    color: initial;
+}
+
+img.default{
+    height: 10vmin;
+    width: 10vmin;
+    margin: auto;
+}
+
+input.custom-input {
+    margin-top: 0.5vmin;
+    margin-bottom: 1.5vmin;
+}
+
+/* Div class */
+
+#border{
+    border-radius: 10px;
+    border-color: black;    
+    border-style: solid;
+    opacity: 1;
+    width: 30%;
+    height: 40%;
+    margin: auto;
+}
+
+div.main {
+    margin: auto;
+    width: 70%;
+    height: auto;
+}
+
+div.background{
+    margin: auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    padding: 2%;
+    width: 70%;
+    background: rgba(255,255,255,.3);
+    border-radius: 10px;
+}
+
+div.gallery-grid{
+    height: 90%;
+}
+
+div.title{
+    margin: auto;
+    padding-top: 13%;
+    text-align: center;
+    overflow: hidden;
+}   
+
+div.slide-up {
+  overflow:hidden;
+}
+div.slide-up p {
+  animation: 2s slide-up;
+  margin-top:0%;
+}
+
+/* Button */
+
+.gallery{
+    font-family: Frente;
+    font-size: 3.5vmin;
+    width: 21vmin;
+    height: 6vmin;
+    border-color: black;
+    border-style: solid;
+    border-radius: 10px;
+    background-color:rgba(255,255,255,.5);
+    margin: auto; 
+}
+
+.gallery:hover {
+    background-color:rgba(255,255,255,1);
+    border-radius: 10px;
+    color: black;
+}
+
+/* Nav class */
+
+nav.custom{
+    font-family: Frente;
+    font-size: 2.5vmin;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color:rgba(255,255,255,.3);
+    width: 60%;
+    margin:auto;
+}
+
+/* Font */
+
+@font-face {
+    font-family: Bebas;
+    src: local('Bebas'), url("../font/BebasNeueBook.otf") format("opentype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Frente;
+    src: local('Frente'), url("../font/FrenteH1-Regular.otf") format("opentype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Oleo;
+    src: local('Ole'), url("../font/OleoScript-Regular.ttf") format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: SinkinSans;
+    src: local('SinkinSans'), url("../font/SinkinSans-700Bold.otf") format("opentype");
+    font-weight: normal;
+}
+
+/* Keyframes */
+
+@keyframes slide-up {
+    from {
+        margin-top: 100%;
+        height: 300%; 
+    }
+
+    to {
+        margin-top: 0%;
+        height: 100%;
+    }
+}
+
+/* --------- Image POPUP --------- */
+  
+  /* The Modal (background) */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 5%;
+    overflow: hidden;
+    background-color: #2B2828;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #2B2828;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+    height: auto;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .mySlides {
+    display: none;
+    padding: auto;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  img.is-vertical {
+    height: 90vh;
+    padding-left: 25%;
+  }
+
+  img.is-landscape{
+      height: 90vh;
+      width: 90vh;
+
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  
+  img.hover-shadow {
+    transition: 0.3s;
+    border-radius:5px;
+  }
+  
+  .hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+  }
+
+/* ------------------------------- */

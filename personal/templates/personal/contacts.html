@@ -1,0 +1,78 @@
+{% extends "personal/headerHome.html" %}
+
+{% block content %}
+
+        <div class=background>
+            <div class="tile is-ancestor">    
+                <div class="tile is-parent is-vertical is-6">
+                    <form method="post" name="contact_form" action="contact_form_handler.php">
+                        <div class="tile is-child field">
+                            <label class="label">Name</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="Text input">
+                            </div>
+                        </div>
+                            
+                        <div class="tile is-child field">
+                            <label class="label">Email</label>
+                            <div class="control">
+                                <input class="input" type="email" placeholder="Email input">
+                            </div>
+                        </div>
+                            
+                        <div class="tile is-child field">
+                            <label class="label">Object</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="Email object">
+                            </div>
+                            </div>
+                            
+                        <div class="tile is-child field">
+                            <label class="label">Message</label>
+                            <div class="control">
+                                <textarea class="textarea" placeholder="Textarea"></textarea>
+                            </div>
+                        </div>
+                            
+                        <div class="tile is-child field is-grouped">
+                            <div class="control">
+                                <input class="button is-primary" type="submit" value="Submit">                        
+                            </div>
+                            <div class="control">
+                                <input class="button is-link"type="reset" value=Reset>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="tile is-parent is-vertical is-6">  
+                    <div class="tile is-child">
+                        <div>
+                            <p> Ciao, se ti piacciono i miei lavori, oppure no, fammelo sapere. </p>
+                            <p> Se hai domande, consigli o critiche sentiti libero di scivermi, grazie per essere passato. </p> 
+                            <br>
+                            <p> P.S. se vuoi rimanere aggioranto seguimi su instagram. 
+                        </div>   
+                    </div>
+                    
+                    <div class="tile is-child">
+                        <a href="https://instagram.com/riccardogrespan">
+                            <img class="default" src="low-res/instagram.png" >
+                        </a>   
+                    </div>
+
+                    <div class="tile is-child">
+                        <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
+                            <img alt="Licenza Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" />
+                        </a>
+                        <p>
+                            Quest'opera è distribuita con Licenza 
+                            <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribuzione - Non commerciale - Non opere derivate 4.0 Internazionale</a>.
+                        </p>
+                    </div>
+
+                </div>
+           </div>
+        </div>
+
+{% endblock %}

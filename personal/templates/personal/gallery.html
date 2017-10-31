@@ -1,0 +1,113 @@
+{% extends "personal/headerOther.html" %}
+
+{% block content %}    
+<div class="background">      
+    <div class="tile is-ancestor">
+        
+            <div class="tile is-parent is-4 is-vertical">
+
+                <div class="tile is-child">
+                    <img src="static/low-res/IMG_4739-min.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow  ">
+                </div>
+                
+                <div class="tile is-child">
+                    <img src="static/low-res/IMG_9312-min.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                </div>
+                
+                <div class="tile is-child">
+                    <img src="static/low-res/IMG_8555-min.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                </div>
+                
+            </div>
+        
+            <div class="tile is-parent is-4 is-vertical">
+                
+                <div class="tile is-child">
+                    <img src="static/low-res/IMG_7965-min.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+                </div>
+                
+                <div class="tile is-child">
+                    <img src="static/low-res/IMG_9282-min.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+                </div>
+                
+                <div class="tile is-child">
+                    <img src="static/low-res/IMG_7930-min.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow">
+                </div>
+
+                <div class="tile is-child">
+                    <img src="static/low-res/IMG_8535-min.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow">
+                </div>
+
+            </div>
+
+            <div class="tile is-parent is-4 is-vertical">
+                    
+                    <div class="tile is-child">
+                        <img src="static/low-res/IMG_3935-min.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow">
+                    </div>
+                    
+                    <div class="tile is-child">
+                        <img src="static/low-res/IMG_4771-min.jpg" onclick="openModal();currentSlide(9)" class="hover-shadow">
+                    </div>
+                    
+                    <div class="tile is-child">
+                        <img src="static/low-res/IMG_4779-min.jpg" onclick="openModal();currentSlide(10)" class="hover-shadow">
+                    </div>
+                </div>
+        
+    </div>
+
+    <div id="myModal" class="modal">
+        
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        
+        <div class="modal-content">
+
+            <div class="mySlides">
+                <img class=is-vertical src="static/hi-res/IMG_4739.jpg">
+            </div>
+
+            <div class="mySlides">
+                <img class=is-landscape src="static/hi-res/IMG_9312.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <img src="static/hi-res/IMG_8555.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <img src="static/hi-res/IMG_7965.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <img src="static/hi-res/IMG_9282.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <img src="static/hi-res/IMG_7930.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <img src="static/hi-res/IMG_8535.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <img src="static/hi-res/IMG_3935.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <img class=is-vertical src="static/hi-res/IMG_4771.jpg">
+            </div>
+            
+            <div class="mySlides">
+                <img src="static/hi-res/IMG_4779.jpg" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+    </div>
+</div>        
+{% endblock %} 
+  

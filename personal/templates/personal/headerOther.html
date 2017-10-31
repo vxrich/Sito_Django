@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <title>Riccardo Grespan - Photography</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel=stylesheet href="{% static 'css/custom.css' %}" type=text/css>
+        <script src="{% static 'js/burger.js' %}"></script>\
+        <script src="{% static 'js/img_popup.js' %}"></script>
+    </head>
+    <body id=other class=-webkit-scrollbar> 
+        
+        <div class=main>
+            <header>
+                <nav class="navbar custom">
+                    <div class="navbar-brand">
+                        <a class="navbar-item custom" href="/">
+                                <img src="{% static 'low-res/camera.jpg' %}" width="40" height="40">
+                            </a>
+                        <div class="navbar-menu">
+                            <a class="navbar-item custom" href="/">HOME</a>
+                            <a class="navbar-item custom" href="../gallery">GALLERY</a>
+                            <a class="navbar-item custom" href="/blog/">BLOG</a>
+                            <a class="navbar-item custom" href="../mission">MISSION</a>
+                            <a class="navbar-item custom" href="../contacts">CONTACTS</a>
+                        </div>
+                        <div class="navbar-burger" data-target=hamburger>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div id=hamburger class="navbar-menu">
+                        <div class="navbar-start">
+                            <div class="navbar-item has-dropdown is-hoverable">
+                                <div class="navbar-dropdown ">
+                                    <a class="navbar-item custom" href="/">HOME</a>
+                                    <a class="navbar-item custom" href="../gallery">GALLERY</a>
+                                    <a class="navbar-item custom" href="/blog/">BLOG</a>
+                                    <a class="navbar-item custom" href="../mission">MISSION</a>
+                                    <a class="navbar-item custom" href="../contacts">CONTACTS</a>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                  </nav>
+            </header>
+        </div>
+
+        {% block content %}
+        {% endblock %}	
+
+    </body>
+</html>
