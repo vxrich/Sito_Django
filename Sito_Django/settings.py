@@ -27,6 +27,20 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
+# Email value for send email to me
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'r.grespan6@gmail.com'
+EMAIL_HOST_PASSWORD = 'asusx205ta'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+
+'''
+If using gmauil, you will need to
+unlock Captcha to enable Django
+to send for you:
+https://accounts.google.com/displayunlockcaptcha
+'''
 
 # Application definition
 
@@ -121,3 +135,4 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = "/home/riccardogrespan/Sito_Django/static/"
+
