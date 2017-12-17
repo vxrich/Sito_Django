@@ -1,5 +1,5 @@
 {% extends "personal/headerHome.html" %}
-
+{% load static %}
 {% block content %}
 
         <div class=background>
@@ -9,29 +9,28 @@
                         <div class="tile is-child field">
                             <label class="label">Name</label>
                             <div class="control">
-                                <input class="input" type="text" name="name" placeholder="Text input">
+                                <input class="input" type="text" name="name" placeholder="Your name">
                             </div>
                         </div>
                             
                         <div class="tile is-child field">
                             <label class="label">Email</label>
                             <div class="control">
-                                <input class="input" type="email" name="email" placeholder="Email input">
+                                <input class="input" type="email" name="email" placeholder="Your Email">
                             </div>
                         </div>
                             
                         <div class="tile is-child field">
-                            <label class="label">You must answer <u>YES</u> to the question below to<br /> approve sending this email.  <span class="required">*</span></label>
-                                Do you want to send me an email? 
+                            <label class="label is-medium">You must answer <u>YES</u> to the question below to approve sending this email.  <span class="required">*</span></label>
                             <div class="control">
-                                <input name="botcheck" class="inputtext" type="text" maxlength="5" size="5" />
+                                <input class="input" type="text" name="botcheck" maxlength="5" size="5" placeholder="Do you want to send an email?"/>
                             </div>
                         </div>
                             
                         <div class="tile is-child field">
                             <label class="label">Message</label>
                             <div class="control">
-                                <textarea class="textarea" name="comment" placeholder="Textarea"></textarea>
+                                <textarea class="textarea" name="comment" placeholder="Your message"></textarea>
                             </div>
                         </div>
                             
@@ -58,7 +57,7 @@
                     
                     <div class="tile is-child">
                         <a href="https://instagram.com/riccardogrespan">
-                            <img class="default" src="low-res/instagram.png" >
+                            <img class="default" src="{% static "low-res/instagram.png" %}" >
                         </a>   
                     </div>
 
@@ -68,7 +67,7 @@
                         </a>
                         <p>
                             Quest'opera è distribuita con Licenza 
-                            <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribuzione - Non commerciale - Non opere derivate 4.0 Internazionale</a>.
+                            <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><u>Creative Commons Attribuzione - Non commerciale - Non opere derivate 4.0 Internazionale</u></a>.
                         </p>
                     </div>
 

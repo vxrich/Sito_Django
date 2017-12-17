@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-{% load staticfiles %}
+{% load static %}
 <html lang="en">
     <head>
         <title>Riccardo Grespan - Photography</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel=stylesheet href="{% static 'css/custom.css' %}" type=text/css>
-        <script src="{% static 'js/burger.js' %}"></script>
+        <link rel=stylesheet href="{% static "css/custom.css" %}" type=text/css>
+        <script src="{% static "js/burger.js" %}"></script>
     </head>
     <body id=home class=-webkit-scrollbar> 
         
@@ -15,7 +15,7 @@
                 <nav class="navbar custom">
                     <div class="navbar-brand">
                         <a class="navbar-item custom" href="/">
-                                <img src="{% static 'low-res/camera.jpg' %}" width="40" height="40">
+                                <img src="{% static "low-res/camera.jpg" %}" width="40" height="40">
                             </a>
                         <div class="navbar-menu">
                             <a class="navbar-item custom" href="/">HOME</a>
