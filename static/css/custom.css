@@ -26,9 +26,9 @@ html.other {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
+    overflow: auto;
     font-family: Frente;
     margin: 0;
-    overflow: auto;
 }
 
 ::-webkit-scrollbar {
@@ -167,6 +167,7 @@ nav.custom{
     background-color:rgba(255,255,255,.3);
     width: 60%;
     margin:auto;
+    top: 0;
 }
 
 /* Font */

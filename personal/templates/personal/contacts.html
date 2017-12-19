@@ -1,11 +1,12 @@
-{% extends "personal/headerHome.html" %}
+{% extends "personal/headerOther.html" %}
 {% load static %}
 {% block content %}
 
         <div class=background>
             <div class="tile is-ancestor">    
-                <div class="tile is-parent is-vertical is-6">
+                <div class="tile is-parent is-vertical is-6">  
                     <form method="post" name="contact_form">
+                        {% csrf_token %}
                         <div class="tile is-child field">
                             <label class="label">Name</label>
                             <div class="control">
