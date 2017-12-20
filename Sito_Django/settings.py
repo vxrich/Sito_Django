@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
-# Email value for send email to me
+# Email value to send email to me
 
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'r.grespan6@gmail.com'
