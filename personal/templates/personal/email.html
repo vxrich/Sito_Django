@@ -1,0 +1,43 @@
+{% extends "personal/headerOther.html" %}
+{% load static %}
+{% block content %}
+
+        <div class=background>
+            <div class="tile is-ancestor">    
+                <div class="tile is-parent is-vertical is-6">  
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    {{ button }}
+                </div>
+                
+                <div class="tile is-parent is-vertical is-6">  
+                    <div class="tile is-child">
+                        <div>
+                            <p> Ciao, se ti piacciono i miei lavori, oppure no, fammelo sapere. </p>
+                            <p> Se hai domande, consigli o critiche sentiti libero di scivermi, grazie per essere passato. </p> 
+                            <br>
+                            <p> P.S. se vuoi rimanere aggioranto seguimi su instagram. 
+                        </div>   
+                    </div>
+                    
+                    <div class="tile is-child">
+                        <a href="https://instagram.com/riccardogrespan">
+                            <img class="default" src="{% static "low-res/instagram.png" %}" >
+                        </a>   
+                    </div>
+
+                    <div class="tile is-child">
+                        <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
+                            <img alt="Licenza Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" />
+                        </a>
+                        <p>
+                            Quest'opera è distribuita con Licenza 
+                            <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><u>Creative Commons Attribuzione - Non commerciale - Non opere derivate 4.0 Internazionale</u></a>.
+                        </p>
+                    </div>
+
+                </div>
+           </div>
+        </div>
+
+{% endblock %}

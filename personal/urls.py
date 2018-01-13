@@ -7,5 +7,6 @@ urlpatterns = [
     url(r'^contacts$', views.contact, name='contact'),
     url(r'^gallery$', views.gallery, name='gallery'),
     url(r'^mission$', views.mission, name='mission'),
-    url(r'^contacts/thankyou/$', TemplateView.as_view(template_name='thankyou.html'), name='thankyou'),
+    url(r'^email$', views.email, name='email'),
+    url(r'^success$', views.success, name='success'),
 ]
