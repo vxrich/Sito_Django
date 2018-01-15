@@ -5,9 +5,18 @@
         <div class=background>
             <div class="tile is-ancestor">    
                 <div class="tile is-parent is-vertical is-6">  
-                    {% csrf_token %}
-                    {{ form.as_p }}
-                    {{ button }}
+                    <form action="/success" method="post">
+                        {% csrf_token %}
+                        {{ form.as_p }}
+                        <div class="tile is-child field is-grouped">
+                            <div class="control">
+                                <input class="button is-primary" type="submit" value="Submit">                        
+                            </div>
+                            <div class="control">
+                                <input class="button is-link"type="reset" value=Reset>
+                            </div>
+                        </div>
+                    </form>
                 </div>
                 
                 <div class="tile is-parent is-vertical is-6">  

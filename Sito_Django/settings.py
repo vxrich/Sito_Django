@@ -27,21 +27,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
-# Email value to send email to me
-
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'r.grespan6@gmail.com'
-EMAIL_HOST_PASSWORD = 'asusx205ta'
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
-
-'''
-If using gmail, you will need to
-unlock Captcha to enable Django
-to send for you:
-https://accounts.google.com/displayunlockcaptcha
-'''
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -139,3 +124,10 @@ STATICFILES_DIRS = (
   os.path.join(BASE_DIR, 'static/'),
 )
 
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend' 
+EMAIL_USE_TLS = True 
+EMAIL_HOST = 'smtp.gmail.com' 
+EMAIL_PORT = 587 
+EMAIL_HOST_USER = 'r.grespan6@gmail.com' 
+EMAIL_HOST_PASSWORD = 'asusx205ta' 
+DEFAULT_FROM_EMAIL = 'testing@testing.com'
