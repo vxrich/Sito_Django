@@ -2,7 +2,7 @@
 from __future__ import unicode_literals
 from django.shortcuts import render, redirect
 import django.middleware.csrf as csrf
-from django.core.mail import send_mail, BadHeaderError
+from django.core.mail import send_mail, BadHeaderError, EmailMessage
 from django.http import HttpResponse, HttpResponseRedirect
 from .forms import ContactForm
 
@@ -19,10 +19,12 @@ def email(request):
     else:
         form = ContactForm(request.POST)
         if form.is_valid():
-            subject = form.cleaned_data['subject']
             from_email = form.cleaned_data['from_email']
+            subject = form.cleaned_data['subject']
             message = form.cleaned_data['message']
             try:
+                msg = EmailMessage(subject, message, to=['r.grespan6@gmail.com'],)
+                msg.send()
                 send_mail(subject, message, from_email, ['r.grespan6@gmail.com'])
             except BadHeaderError:
                 return HttpResponse('Invalid header found.')
