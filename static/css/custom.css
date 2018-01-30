@@ -61,12 +61,16 @@ p.subtitle{
     color: white;
 }
 
-a.custom{
+a.blog-link{
     color: black;
-    font-size: 4vmin;
+    font-size: 3vmin;
     font-family: Frente;
     font-weight: bold;
     
+}
+
+a.custom{
+    font-size: 3vmin;
 }
 
 a.custom:hover {

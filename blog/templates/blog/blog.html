@@ -6,7 +6,7 @@
             <div class="tile is-parent is-4 is-vertical">         
                 {% for post in object_list%}
                     <div class="tile is-child">
-                        <a class="custom" href="{{post.id}}"> {{ post.title}} </a>
+                        <a class="blog-link" href="{{post.id}}"> {{ post.title}} </a>
                         <div class="tile is-child">     
                             <img src="../{{post.cover}}" href="{{post.id}}" class="hover-shadow">
                         </div>
