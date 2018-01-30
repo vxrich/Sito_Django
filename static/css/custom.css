@@ -46,6 +46,7 @@ p {
 
 h5 {
     justify-content: center;
+    color: black;
 }
 
 p.title{
@@ -62,7 +63,14 @@ p.subtitle{
 
 a.custom{
     color: black;
-    font-size: 3vmin;
+    font-size: 4vmin;
+    font-family: Frente;
+    font-weight: bold;
+    
+}
+
+a.custom:hover {
+    font-size: 4vmin;
 }
 
 a.cc{
