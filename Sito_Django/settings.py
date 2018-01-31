@@ -121,7 +121,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 #MEDIA_ROOT = '/blog/templates/cover/'
 #MEDIA_URL = '/static/'
-#STATIC_ROOT = "/home/riccardogrespan/Sito_Django/static/"
+STATIC_ROOT = "/home/vxrich/Sito_Django/static/"
 STATICFILES_DIRS = (
   os.path.join(BASE_DIR, 'static/'),
 )
