@@ -4,6 +4,7 @@
 html {
     margin: 0;
     height: 100%;
+    font-family: Frente;
 }
 
 html.other {
@@ -71,6 +72,7 @@ a.blog-link{
 
 a.custom{
     font-size: 3vmin;
+    
 }
 
 a.cc{
@@ -173,7 +175,7 @@ nav.custom{
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     background-color:rgba(255,255,255,.3);
-    width: 50%;
+    width: 45%;
     margin:auto;
     top: 0;
 }

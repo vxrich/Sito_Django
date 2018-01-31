@@ -6280,7 +6280,7 @@ a.navbar-item:hover, a.navbar-item.is-active,
   margin: 0.5rem 0;
 }
 
-@media screen and (max-width: 1007px) {
+@media screen and (max-width: 768px) {
   .navbar > .container {
     display: block;
   }
@@ -6624,7 +6624,7 @@ a.navbar-item:hover, a.navbar-item.is-active,
       flex-wrap: wrap;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1280px) {
   .pagination {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
