@@ -128,6 +128,12 @@ div.background{
     border-radius: 10px;
 }
 
+div.custom-brand{
+    margin: 0 auto;
+    width: 95%;
+    align-content: center;
+}
+
 div.gallery-grid{
     height: 90%;
 }
@@ -169,7 +175,7 @@ div.slide-up p {
 
 /* Nav class */
 
-nav.custom{
+nav.custom-nav{
     font-family: Frente;
     font-size: 2.5vmin;
     border-bottom-left-radius: 10px;
