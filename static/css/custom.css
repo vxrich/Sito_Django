@@ -129,9 +129,8 @@ div.background{
 }
 
 div.custom-brand{
-    margin: 0 auto;
-    width: 95%;
-    align-content: center;
+    margin: auto;
+    width: 100%;
 }
 
 div.gallery-grid{

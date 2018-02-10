@@ -6302,7 +6302,7 @@ a.navbar-item:hover, a.navbar-item.is-active,
   }
 }
 
-@media screen and (min-width: 1008px) {
+@media screen and (min-width: 1200px) {
   .navbar,
   .navbar-menu,
   .navbar-start,
